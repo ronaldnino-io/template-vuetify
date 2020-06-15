@@ -34,6 +34,7 @@ jobs:
           path: dist
       - name: Deploy to Firebase
         uses: ronaldnino-io/template-vuetify@master
+        uses: ./.github/actions/cd
         with:
           args: deploy --only hosting
         env:
